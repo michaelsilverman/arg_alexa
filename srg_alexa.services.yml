@@ -1,0 +1,5 @@
+services:
+  srg_alexa.request_subscriber:
+    class: Drupal\srg_alexa\EventSubscriber\RequestSubscriber
+    tags:
+      - { name: event_subscriber }

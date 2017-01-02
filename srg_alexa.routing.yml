@@ -1,0 +1,7 @@
+srg_alexa:
+  path: '/srg_alexa'
+  defaults:
+    _controller: Drupal\srg_alexa\Controller\AlexaController::loginfo
+  requirements:
+    _permission: 'access content'
+  
