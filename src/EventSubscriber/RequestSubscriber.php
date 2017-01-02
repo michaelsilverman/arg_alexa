@@ -33,7 +33,7 @@ class RequestSubscriber implements EventSubscriberInterface {
     $response = $event->getResponse();
     switch ($request->intentName) {
       case 'AMAZON.HelpIntent':
-        $response->respond('xxx-You can ask anything and I will respond with "Hello Drupal"');
+        $response->respond('You can ask anything and I will respond with "Hello Drupal"');
         break;
       case 'HelloDrupal':
         $city = $request->data['request']['intent']['slots']['City']['value'];
